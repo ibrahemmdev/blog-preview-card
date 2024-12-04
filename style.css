@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "Figtree";
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yelllow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%)
+}
+
+html {
+    background-color: var(--yelllow);
+}
+
+.cc { 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 350px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+}
+
+.inner {
+    width: 350px;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 14px;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;    
+    z-index: 1;
+}
+
+.shadoooo {
+    position: absolute;
+    width: 350px;
+    height: 515px;
+    background-color: #000;
+    border-radius: 14px;
+    z-index: -1;
+    top: 6%;
+    left: 9%;
+
+}
+
+.image-cover {
+    width: 100%;
+    height: 220px;
+}
+
+.image-cover img {
+    width: 100%;
+    height: 220px;
+    border-radius: 14px;
+    object-fit: cover;
+}
+
+.content { 
+    padding: 20px 0;
+}
+
+.content h4 { 
+    font-family: "Figtree", sans-serif;
+    font-size: 0.8rem;
+    padding: 0.39rem 0.7rem;
+    background-color: var(--yelllow);
+    width: fit-content;
+    border-radius: 5px;
+    font-weight: 800;
+    height: fit-content;
+}
+
+.content h6 { 
+    font-family: "Figtree", sans-serif;
+    font-size: 0.8rem;
+    padding: 0.9rem 0;
+    font-weight: 400;
+}
+
+.content h1 {
+    font-family: "Figtree", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.content a { 
+    text-decoration: none;
+    color: #000;
+    transition: 0.5s all ease;
+
+}
+.content a:hover {
+    color: var(--yelllow);
+}
+
+.content p {
+    color: var(--gray-500);
+    font-family: "Figtree", sans-serif;
+    font-size: 0.86rem;
+    padding: 0.9rem 0;
+    font-weight: 500;
+    line-height: 1.1rem;
+}
+
+.user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user .user-avatar img { 
+    width: 35px;
+    height: 35px;
+}
+
+.user span {
+    font-family: "Figtree", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+
